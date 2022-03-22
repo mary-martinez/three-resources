@@ -4,6 +4,7 @@ import Main from './view/Main/Main';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import ToysView from './view/Toys/ToysView';
+import MoviesView from './view/Movies/MoviesView';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route path="/toys">
             <ToysView />
+          </Route>
+          <Route path="/movies">
+            <MoviesView />
           </Route>
         </Switch>
       </div>
