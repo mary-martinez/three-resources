@@ -13,12 +13,13 @@ export default function MoviesView() {
       };
       fetchData();
     } catch (e) {
-      setError(e);
+      setError(e.message);
     }
   }, []);
 
   return (
     <div>
+      {error && <p>{error}</p>}
       <Movies {...{ movies }} />
     </div>
   );
