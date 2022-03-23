@@ -4,7 +4,6 @@ export default function Toys({ colors, name, type, strength }) {
   return (
     <div>
       <h2>{`${name} the ${type}`}</h2>
-      {/* <img src=''/> */}
       <h3>Strength: {strength}</h3>
       <p>Colors: {colors}</p>
     </div>

@@ -16,7 +16,6 @@ export default function ToysView() {
     <div>
       {toys.map((toy) => (
         <Toys key={(toy.id)} colors={toy.colors} name={toy.name} strength={toy.strength} type={toy.type} />
-
       ))}
     </div>
   );
